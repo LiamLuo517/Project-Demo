@@ -1,0 +1,53 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e76f51;
+    display: flex;
+    height: 100vh;/* 遇到align-items: center;无效，可以增加一个height: 100vh;来解决 */
+    align-items: center;
+    justify-content: center;
+}
+.login
+{
+    background-color: #0b123b;
+    width: 400px;
+    color: #f8f9fa;
+    padding: 40px;
+    box-shadow: 10px 10px 25px #00000080;
+    text-align: center;
+}
+.login input
+{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 22px;
+    outline: none;/* 去掉点击input框时候出现的轮廓线 */
+    color: #f8f9fa;
+}
+.login input[type="text"], .login input[type="password"]
+{
+    border: 2px solid #3498db;
+    width: 220px;
+}
+.login input[type="submit"]
+{
+    width: 150px;
+    border: 2px solid #2ecc71;
+    cursor: pointer;/* 移动到按钮上变为手指 */
+
+}
+.login input[type="text"]:focus, .login input[type="password"]:focus/* 聚焦时候的效果 */
+{
+    border-color: #2ecc71;
+    width: 280px;
+    transition: 0.5s;/* 实现简单的animation效果 */
+}
+.login input[type="submit"]:hover
+{
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
